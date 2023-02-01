@@ -594,6 +594,18 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.border {
+  border: 1px solid gray;
+}
+
+.border-primary {
+  border: 1px solid blue;
+}
+
+.border-secondary {
+  border: 1px solid hotpink;
+}
+
 .d-none {
   display: none;
 }

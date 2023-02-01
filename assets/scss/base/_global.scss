@@ -19,6 +19,16 @@ body {
 }
 
 //================= helper classes ==================//
+// testing border
+.border {
+  border: 1px solid gray;
+}
+.border-primary {
+  border: 1px solid blue;
+}
+.border-secondary {
+  border: 1px solid hotpink;
+}
 //================= Display classes
 .d-none {
   display: none;
