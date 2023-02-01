@@ -1,0 +1,32 @@
+// Center Element
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Padding Left and right
+@mixin px($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+// margin left and right
+@mixin mx($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+// padding top and bottom
+@mixin py($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+// margins top and bottom
+@mixin my($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+// background theme

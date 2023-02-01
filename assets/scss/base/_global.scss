@@ -1,0 +1,122 @@
+// css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  width: 100%;
+  overflow: hidden;
+  font-family: $font-primary;
+}
+// Font Family
+.font-primary {
+  font-family: $font-primary;
+}
+
+//================= helper classes ==================//
+//================= Display classes
+.d-none {
+  display: none;
+}
+// flex properties
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  @include flex-center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+//================= widths
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-100 {
+  width: 100%;
+}
+
+//================== Heights
+.h-25 {
+  height: 25%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-100 {
+  height: 100%;
+}
+
+//=================== Font Weight
+.fw-bolder {
+  font-weight: 700;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-bold {
+  font-weight: 500;
+}
+.fw-lighter {
+  font-weight: 200;
+}
+
+//================= text customization
+.text-white {
+  color: $White;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+// border
+
+.rounded {
+  border-radius: 10px;
+}
+
+// backgroung color
+
+// Radius
+
+// ========================= CUSTOM CSS ========================== //
