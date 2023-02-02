@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .p-0 {
   padding: 0px;
 }
@@ -581,17 +581,34 @@
   box-sizing: border-box;
 }
 
+:root {
+  --theme-color: white;
+  --theme-background: white;
+}
+
 html,
 body {
   height: 100%;
-  font-size: 16px;
   width: 100%;
+}
+
+body {
+  font-size: 16px;
   overflow: hidden;
-  font-family: "Rubik", sans-serif;
+  font-family: "Alata", sans-serif;
+  color: var(--theme-color);
+}
+
+ul {
+  list-style: none;
 }
 
 .font-primary {
-  font-family: "Rubik", sans-serif;
+  font-family: "Alata", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .border {
@@ -708,12 +725,99 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 
+.text-dark {
+  color: hsl(0deg, 0%, 0%);
+}
+
 .text-nowrap {
   white-space: nowrap;
 }
 
+.text-to-upper {
+  text-transform: uppercase;
+}
+
 .rounded {
   border-radius: 10px;
+}
+
+.theme-margin {
+  width: 75%;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.container {
+  height: 100%;
+  overflow: auto;
+}
+
+.top_container {
+  position: relative;
+  background: url(./../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .top_container {
+    background-size: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .top_container {
+    background: url(./../images/mobile/image-hero.jpg);
+    background-size: 100%;
+  }
+}
+.top_container header {
+  z-index: 2;
+  margin-top: 30px;
+}
+.top_container nav li {
+  margin-left: 30px;
+  font-size: 14px;
+}
+.top_container .hero_heading_wrapper {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 30px 80px 30px 30px;
+  font-size: 40px;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  margin: 70px 0px;
+  z-index: 2;
+}
+.top_container .hero_heading {
+  font-weight: unset;
+  font-weight: 200;
+  font-size: 75px;
+}
+.top_container .hero_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.233);
+  z-index: 1;
+}
+
+.vr-image-wrapper {
+  width: 60%;
+  position: relative;
+}
+
+.interactive-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -75%;
+  top: 30%;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 50px 170px 0px 100px;
+}
+.interactive-content .interactive-para {
+  text-align: left;
+  color: hsl(0deg, 0%, 55%);
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

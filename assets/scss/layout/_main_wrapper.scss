@@ -1,0 +1,18 @@
+.vr-image-wrapper {
+  width: 60%;
+  position: relative;
+}
+.interactive-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -75%;
+  top: 30%;
+  background-color: $white;
+  padding: 50px 170px 0px 100px;
+  .interactive-para {
+    text-align: left;
+    color: $dark-gray;
+    font-size: 14px;
+  }
+}

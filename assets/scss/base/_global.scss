@@ -4,18 +4,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+// variables
+:root {
+  --theme-color: white;
+  --theme-background: white;
+}
 
 html,
 body {
   height: 100%;
-  font-size: 16px;
   width: 100%;
+}
+body {
+  font-size: 16px;
   overflow: hidden;
   font-family: $font-primary;
+  color: var(--theme-color);
+}
+
+ul {
+  list-style: none;
+  // padding: 0;
 }
 // Font Family
 .font-primary {
   font-family: $font-primary;
+}
+.font-secondary {
+  font-family: $font-secondary;
 }
 
 //================= helper classes ==================//
@@ -112,11 +128,17 @@ body {
 
 //================= text customization
 .text-white {
-  color: $White;
+  color: $white;
+}
+.text-dark {
+  color: $black;
 }
 
 .text-nowrap {
   white-space: nowrap;
+}
+.text-to-upper {
+  text-transform: uppercase;
 }
 
 // border
@@ -125,8 +147,21 @@ body {
   border-radius: 10px;
 }
 
+// margins
+.theme-margin {
+  // margin-left: $theme-margin;
+  width: 75%;
+  // margin-right: $theme-margin;
+}
+
 // backgroung color
 
 // Radius
-
+h2 {
+  font-size: 45px;
+}
 // ========================= CUSTOM CSS ========================== //
+.container {
+  height: 100%;
+  overflow: auto;
+}
