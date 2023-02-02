@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link rel="stylesheet" href="">
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
@@ -16,18 +16,73 @@
 <body>
   <div class="container">
     <!-- top -->
-    <div class="top_container border-secondary mb-2">
+    <div class="top_container d-flex align-items-center flex-column mb-2">
+      <!-- overlay -->
+      <div class="hero_overlay"></div>
       <!-- header wrapper -->
-      <header class="border py-3 px-4">this is header</header>
+      <header class="theme-margin py-4 mt-4 d-flex align-items-center justify-between">
+        <div>
+          <h1>loopstudios</h1>
+        </div>
+        <nav>
+          <ul class="d-flex nav">
+            <li class="nav-link">About</li>
+            <li class="nav-link">Careers</li>
+            <li class="nav-link">Events</li>
+            <li class="nav-link">Products</li>
+            <li class="nav-link">Support</li>
+          </ul>
+        </nav>
+      </header>
       <!-- hero Wrapper -->
-      <div class="hero_wrapper py-7 px-4 border-primary">this is heros</div>
+      <div class="hero_wrapper d-flex theme-margin py-7">
+        <div class="hero_heading_wrapper">
+          <div class="hero_heading d-flex flex-column text-to-upper ">
+            <span>Immersive</span>
+            <span>Experiences</span>
+            <span>That deliver</span>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- main wapper start -->
-    <main class="border-primary">
-      <section class="vr border-secondary px-3 py-5">this is vr section</section>
-      <section class="creation border mt-3 px-3 py-7">this is creation section</section>
+    <main class="d-flex flex-column align-items-center my-6">
+      <!-- vr details section  -->
+      <section class="vr theme-margin py-1 my-7 d-flex">
+        <!-- image wrapper  -->
+        <div class="vr-image-wrapper">
+          <img src="./assets/images/desktop/image-interactive.jpg" alt="">
+          <div class="text-dark interactive-content d-flex flex-column justify-center">
+            <h2 class="font-secondary text-to-upper text-dark text-nowrap d-flex flex-column">
+              <span> The leader in</span>
+              <span>interactive VR</span>
+            </h2>
+            <p class="interactive-para font-primary mt-3">Founded in 2011, Loopstudios has been producing world-class
+              virtual
+              reality
+              projects for some of the best companies around the globe. Our award-winning
+              creations have transformed businesses through digital experiences that bind
+              to their brand.</p>
+          </div>
+        </div>
+        <!-- right side text  -->
+      </section>
+      <section class="creation border theme-margin mt-3 py-7">
+        <!-- section heading  -->
+        <div class="creation_heading">
+
+        </div>
+      </section>
     </main>
-    <footer class="border px-3 py-7 mt-5">this is footer section</footer>
+    <!-- footer  -->
+    <footer class="border py-7 mt-5 d-flex justify-center">
+      <div class="theme-margin border-primary">
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nostrum delectus laboriosam consequuntur maxime
+        eius quas eveniet sit rem corrupti ducimus ex amet iusto quia nobis, incidunt numquam distinctio alias! Aperiam
+        saepe harum animi? Labore animi sint voluptatem tenetur aperiam.
+      </div>
+    </footer>
   </div>
 </body>
 
