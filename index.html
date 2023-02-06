@@ -14,16 +14,40 @@
 </head>
 
 <body>
+  <!-- Main Container  -->
   <div class="container">
-    <!-- top -->
+    <!-- Mobile Menu  -->
+    <div id="hamburger">
+      <div class="p-7">
+        <div class="d-flex justify-between fs-3 align-items-center">
+          <h1>loopstudios</h1>
+          <span class=""><a href="javascript:void(0)" onclick="closeHamburger()"><img class="close"
+                src="./assets/images/icon-close.svg" alt="close"></a></span>
+        </div>
+        <nav class="hamburger-nav">
+          <ul class="d-flex flex-column font-secondary nav">
+            <li class="nav-link">About</li>
+            <li class="nav-link">Careers</li>
+            <li class="nav-link">Events</li>
+            <li class="nav-link">Products</li>
+            <li class="nav-link">Support</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Mobile menu end  -->
+
+    <!-- Top Section Start  -->
     <div class="top_container d-flex align-items-center flex-column mb-2">
-      <!-- overlay -->
+      <!-- Dark overlay -->
       <div class="hero_overlay"></div>
       <!-- header wrapper -->
       <header class="theme-margin py-4 mt-4 d-flex align-items-center justify-between">
+        <!-- Brand Logo  -->
         <div>
           <h1>loopstudios</h1>
         </div>
+        <!-- navlinks  -->
         <nav>
           <ul class="d-flex nav">
             <li class="nav-link">About</li>
@@ -33,7 +57,12 @@
             <li class="nav-link">Support</li>
           </ul>
         </nav>
+        <!-- Mobile screen hamburger menu icon  -->
+        <div class="hamburger-icon"><a href="javascript:void(0)" onclick="openHamburger()"> <img
+              src="./assets/images/icon-hamburger.svg" alt=""></a></div>
       </header>
+      <!-- header end  -->
+
       <!-- hero Wrapper -->
       <div class="hero_wrapper d-flex theme-margin py-7">
         <div class="hero_heading_wrapper">
@@ -44,7 +73,10 @@
           </div>
         </div>
       </div>
+      <!-- hero section end  -->
     </div>
+    <!-- top end  -->
+
     <!-- main wapper start -->
     <main class="d-flex flex-column align-items-center my-6">
       <!-- vr details section  -->
@@ -52,8 +84,9 @@
         <!-- image wrapper  -->
         <div class="vr-image-wrapper">
           <img src="./assets/images/desktop/image-interactive.jpg" alt="">
+          <!-- right side container -->
           <div class="text-dark interactive-content d-flex flex-column justify-center">
-            <h2 class="font-secondary text-to-upper text-dark text-nowrap d-flex flex-column">
+            <h2 class="font-secondary text-to-upper interactive-head text-dark text-nowrap d-flex flex-column">
               <span> The leader in</span>
               <span>interactive VR</span>
             </h2>
@@ -65,8 +98,9 @@
               to their brand.</p>
           </div>
         </div>
-        <!-- right side text  -->
       </section>
+
+      <!-- Creation Section  -->
       <section class="creation theme-margin mt-3 py-7">
         <!-- section heading  -->
         <div class="creation_heading d-flex justify-between align-items-center mb-7">
@@ -79,115 +113,134 @@
             </button>
           </div>
         </div>
-        <div class="creation_card_wrapper mt-6">
-          <div class="row justify-end">
 
+        <!-- Creation cards wrapper  -->
+        <div class="creation_card_wrapper mt-6">
+          <!-- grid row  -->
+          <div class="row justify-end">
+            <!-- card 1  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-deep-earth.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-deep-earth.jpg" alt="">
+              <img src="./assets/images/mobile/image-deep-earth.jpg" alt="" class="sm-img">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>Deep</span>
                 <span>Earth</span>
               </div>
             </div>
+            <!-- card 2 -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-night-arcade.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-night-arcade.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-night-arcade.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>Night</span>
                 <span>Arcade</span>
               </div>
             </div>
+            <!-- card 3 -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-soccer-team.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-soccer-team.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-soccer-team.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>soccer</span>
                 <span>team vr</span>
               </div>
             </div>
+            <!-- card 4  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-grid.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-grid.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-grid.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>the</span>
                 <span>grid</span>
               </div>
             </div>
+            <!-- card 5  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-from-above.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-from-above.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-from-above.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>from up</span>
                 <span>above vr</span>
               </div>
             </div>
+            <!-- card 6  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-pocket-borealis.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-pocket-borealis.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-pocket-borealis.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>pocket</span>
                 <span>borealis</span>
               </div>
             </div>
+            <!-- card 7  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-curiosity.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-curiosity.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-curiosity.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>the</span>
                 <span>curiosity</span>
               </div>
             </div>
+            <!-- card 8  -->
             <div class="creation_image_wrapper">
-              <img class="" src="./assets/images/desktop/image-fisheye.jpg" alt="">
-              <div class="creation_title d-flex flex-column">
+              <img class="lg-img" src="./assets/images/desktop/image-fisheye.jpg" alt="">
+              <img class="sm-img" src="./assets/images/mobile/image-fisheye.jpg" alt="">
+              <div class="fw-bold creation_title d-flex flex-column">
                 <span>Make it</span>
                 <span>fish eye</span>
               </div>
             </div>
+            <!-- all cards end  -->
+          </div>
+          <div class="btn-sm mt-6 d-flex justify-center">
+            <button class="btn-primary text-to-upper">
+              See All
+            </button>
           </div>
         </div>
+        <!-- card wrapper end  -->
       </section>
+      <!-- creation section end  -->
     </main>
-    <!-- footer  -->
-    <footer class="border py-7 mt-5 d-flex justify-center">
-      <div class="theme-margin border-primary">
+    <!-- main section end  -->
 
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nostrum delectus laboriosam consequuntur maxime
-        eius quas eveniet sit rem corrupti ducimus ex amet iusto quia nobis, incidunt numquam distinctio alias! Aperiam
-        saepe harum animi? Labore animi sint voluptatem tenetur aperiam.
+
+    <!-- footer start  -->
+    <footer class="py-7 d-flex justify-center">
+      <div class="footer-wrapper theme-margin d-flex justify-between">
+        <!-- left -->
+        <div class="left-side-footer">
+          <div>
+            <span class="fs-2 fw-bolder">loopstudios</span>
+          </div>
+          <nav>
+            <ul class="d-flex nav">
+              <li class="nav-link">About</li>
+              <li class="nav-link">Careers</li>
+              <li class="nav-link">Events</li>
+              <li class="nav-link">Products</li>
+              <li class="nav-link">Support</li>
+            </ul>
+          </nav>
+        </div>
+        <!-- right -->
+        <div class="social d-flex flex-column align-items-end">
+          <!-- socical icon  -->
+          <div class="social-img-wrapper d-flex align-items-center">
+            <span class="social-icon"><img src="./assets/images/icon-facebook.svg" alt=""></span>
+            <span class="social-icon"><img src="./assets/images/icon-twitter.svg" alt=""></span>
+            <span class="social-icon"><img src="./assets/images/icon-pinterest.svg" alt=""></span>
+            <span class="social-icon"><img src="./assets/images/icon-instagram.svg" alt=""></span>
+          </div>
+          <div class="copyright-text">© 2021 Loopstudios. All rights reserved.</div>
+        </div>
       </div>
     </footer>
+    <!-- footer end  -->
   </div>
+
+  <!-- script  -->
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
-
-<!-- About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality
-  projects for some of the best companies around the globe. Our award-winning
-  creations have transformed businesses through digital experiences that bind
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved. -->
