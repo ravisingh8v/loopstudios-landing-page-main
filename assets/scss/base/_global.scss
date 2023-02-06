@@ -49,6 +49,12 @@ ul {
 .d-none {
   display: none;
 }
+.d-visible {
+  visibility: visible;
+}
+.d-invisible {
+  visibility: hidden;
+}
 // flex properties
 .d-flex {
   display: flex;
@@ -165,4 +171,18 @@ h2 {
 .container {
   height: 100%;
   overflow: auto;
+}
+button {
+  cursor: pointer;
+}
+li,
+.social-icon {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s linear;
+  &:hover {
+    border-bottom: 2px solid $white;
+  }
 }

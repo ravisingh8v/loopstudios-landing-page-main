@@ -1,3 +1,39 @@
+#hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  z-index: 1000;
+  display: none;
+  h1 {
+    @media (max-width: 540px) {
+      font-size: 30px;
+    }
+  }
+  // @media (max-width: 790px) {
+  // }
+  .close {
+    width: 30px;
+    height: 30px;
+    @media (max-width: 540px) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .hamburger-nav {
+    margin-top: 150px;
+    font-size: 50px;
+    li:hover {
+      border-bottom: 2px solid transparent;
+    }
+    @media (max-width: 540px) {
+      font-size: 30px;
+    }
+  }
+}
 // Top Container
 .top_container {
   position: relative;
@@ -16,33 +52,55 @@
     z-index: 2;
     margin-top: 30px;
   }
+
   nav {
     li {
       margin-left: 30px;
       font-size: 14px;
     }
+    @media (max-width: 790px) {
+      display: none;
+    }
+  }
+  .hamburger-icon {
+    display: none;
+    @media (max-width: 790px) {
+      display: unset;
+    }
+  }
+  .hero_wrapper {
+    @media (max-width: 540px) {
+      justify-content: center;
+    }
   }
   .hero_heading_wrapper {
     font-family: $font-secondary;
     padding: 30px 80px 30px 30px;
-    font-size: 40px;
+    // font-size: 40px;
     border: 2px solid $white;
     margin: 70px 0px;
     z-index: 2;
+    @media (max-width: 540px) {
+      width: 100%;
+      padding: 30px 20px 30px 30px;
+      .hero_heading {
+        font-size: 25px;
+      }
+    }
   }
+
   .hero_heading {
     font-weight: unset;
     font-weight: 200;
     font-size: 75px;
+    @media (max-width: 879px) {
+      font-size: 30px;
+    }
   }
   .hero_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
     background-color: rgba(0, 0, 0, 0.233);
     z-index: 1;
   }
